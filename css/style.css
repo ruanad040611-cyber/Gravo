@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 24px;
+    background: #f1f5f9;
+    color: #172033;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.card {
+    width: min(100%, 600px);
+    padding: 36px;
+    border-radius: 16px;
+    background: #fff;
+    box-shadow: 0 16px 48px rgb(15 23 42 / 10%);
+}
+
+h1 {
+    margin: 0 0 8px;
+    font-size: clamp(1.7rem, 5vw, 2.2rem);
+}
+
+.card > p {
+    color: #526078;
+}
+
+form {
+    margin-top: 28px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.form-row {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    min-width: 0;
+    flex: 1;
+    padding: 12px 14px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+}
+
+input:focus {
+    outline: 3px solid rgb(37 99 235 / 20%);
+    border-color: #2563eb;
+}
+
+button {
+    padding: 12px 18px;
+    border: 0;
+    border-radius: 8px;
+    background: #2563eb;
+    color: #fff;
+    font: inherit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: wait;
+    opacity: 0.65;
+}
+
+#resultado {
+    overflow-wrap: anywhere;
+}
+
+#resultado a {
+    color: #1d4ed8;
+}
+
+@media (max-width: 520px) {
+    .card {
+        padding: 26px 20px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+}

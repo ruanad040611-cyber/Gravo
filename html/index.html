@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encurte URLs de forma simples.">
+    <title>Gravo</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="icon" href="/img/icon.webp" type="image/webp">
+    <script src="/js/app.js" defer></script>
+</head>
+<body>
+    <main class="card">
+        <h1>Gravo</h1>
+        <p>Transforme um link longo em um link fácil de compartilhar.</p>
+        <form id="form-url">
+            <label for="url">Cole sua URL</label>
+            <div class="form-row">
+                <input id="url" name="url" type="url" placeholder="https://exemplo.com/pagina" required>
+                <button type="submit">Encurtar</button>
+            </div>
+        </form>
+        <p id="resultado" role="status" aria-live="polite"></p>
+    </main>
+</body>
+</html>
